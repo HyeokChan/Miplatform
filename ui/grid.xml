@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window>
-	<Form BKColor="white" Font="Arial,9" Height="600" Id="Grid3_Row_Form" PidAttrib="7" Title="Grid3&#32;Row&#32;Form" Ver="1.1" Width="800" WorkArea="TRUE">
+	<Form BKColor="white" Font="Arial,9" Height="600" Id="Grid3_Row_Form" Left="8" PidAttrib="7" Title="Grid3&#32;Row&#32;Form" Top="8" Ver="1.1" Width="800" WorkArea="TRUE">
 		<Datasets>
-			<Dataset Id="DS_GB">
+			<Dataset DataSetType="Dataset" Id="DS_GB">
 				<contents id="DS_GB">
 					<colinfo id="cd" size="1" type="STRING"/>
 					<colinfo id="data" size="10" type="STRING"/>
 				</contents>
 			</Dataset>
-			<Dataset Id="DS_Comm"></Dataset>
-			<Dataset Id="DS_u0450q0">
+			<Dataset DataSetType="Dataset" Id="DS_Comm"></Dataset>
+			<Dataset DataSetType="Dataset" Id="DS_u0450q0">
 				<contents id="DS_u0450q0">
 					<colinfo id="sqty" size="11" type="STRING"/>
 					<colinfo id="samt" size="11" type="STRING"/>
@@ -19,9 +19,9 @@
 					<colinfo id="sbuy_amt" size="11" type="STRING"/>
 				</contents>
 			</Dataset>
-			<Dataset id="DS_u0450q0_1"></Dataset>
-			<Dataset id="DS_u0450q0_2"></Dataset>
-			<Dataset id="DS_u0450q0_3"></Dataset>
+			<Dataset DataSetType="Dataset" Id="DS_u0450q0_10"></Dataset>
+			<Dataset DataSetType="Dataset" Id="DS_u0450q0_2"></Dataset>
+			<Dataset DataSetType="Dataset" Id="DS_u0450q0_3"></Dataset>
 		</Datasets>
 		<Shape BKColor="white" Bottom="550" Height="523" Id="Shape3" Left="2" LineColor="#c5c5c5" Right="754" TabOrder="1" Top="27" Type="Rectangle" Width="752"></Shape>
 		<Shape BKColor="#bccbd8" Bottom="26" Height="26" Id="Shape0" Left="2" LineColor="#bccbd8" Right="754" TabOrder="2" Top="0" Type="Rectangle" Width="752"></Shape>
@@ -31,10 +31,10 @@
 				<Layout Code="P" Height="20" Left="115" Text="Search&#32;Item&#32;1" Top="0" Width="100"/>
 			</Contents>
 		</radio>
-		<Calendar DayFont="Tahoma,9" EditAlign="LEFT" HeaderFont="Tahoma,10,Bold" Height="20" Id="Calendar0" Left="372" SaturdayTextColor="blue" SelectedDayFont="Tahoma,9,Bold" SundayTextColor="red" TabOrder="4" Top="3" TrailingTextColor="black" WeekColor="#aca899" WeeksFont="Tahoma,9" Width="90"></Calendar>
+		<Calendar Height="20" Id="Calendar0" Left="372" SaturdayTextColor="blue" SundayTextColor="red" TabOrder="4" Top="3" TrailingTextColor="black" WeekColor="#aca899" Width="90"></Calendar>
 		<button ButtonStyle="TRUE" Color="black" Cursor="HAND" Height="20" Id="Btn_Srch" Left="693" TabOrder="5" Text="Search" Top="3" Width="52"></button>
 		<Static Align="Center" BKColor="#bccbd8" Color="black" Height="20" Id="Static1" Left="309" TabOrder="6" Text="Date" Top="3" VAlign="Middle" Width="54"></Static>
-		<Grid BindDataset="DS_u0450q0" BKColor="white" BkSelColor="#ffffbd" BoldHead="FALSE" Border="None" Bottom="550" Color="black" Enable="true" FillArea="TRUE" Font="Default,-1" HeadBorder="Flat" Height="522" Id="Grid3" InputPanel="FALSE" Left="3" LineColor="#c5c5c5" Right="754" SelColor="black" TabOrder="8" TabStop="true" Top="28" UseSelColor="FALSE" Visible="true" Width="751">
+		<Grid BindDataset="DS_u0450q0" BKColor="white" BkSelColor="#ffffbd" BoldHead="FALSE" Border="None" Bottom="550" Color="black" Enable="true" EndLineColor="default" FillArea="TRUE" HeadBorder="Flat" Height="522" Id="Grid3" InputPanel="FALSE" Left="3" LineColor="#c5c5c5" Right="754" SelColor="black" TabOrder="8" TabStop="true" Top="28" UseDBuff="true" UsePopupMenu="true" UseSelColor="FALSE" Visible="true" VLineColor="default" WheelScrollRow="1" Width="751">
 			<contents>
 				<columns>
 					<col width="75"/>
